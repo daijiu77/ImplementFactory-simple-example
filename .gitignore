@@ -6,6 +6,20 @@
 *.lo
 *.o
 *.obj
+*.suo
+.suo
+
+# Compiled Release files
+*.cache
+
+# Compiled bin files
+/WindowsFormsApp1/WebApi/bin/
+/WindowsFormsApp1/WindowsFormsApp1/bin/
+
+
+# Compiled obj files
+/WindowsFormsApp1/WebApi/obj/
+/WindowsFormsApp1/WindowsFormsApp1/obj/
 
 # Precompiled Headers
 *.gch
@@ -14,7 +28,6 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
