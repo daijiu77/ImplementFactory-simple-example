@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
             //test_clone();
 
-            //getData();
+            getData();
 
             //int a1 = calculate.Sum(1, 2);
 

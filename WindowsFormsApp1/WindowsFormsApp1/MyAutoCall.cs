@@ -18,9 +18,9 @@ namespace WindowsFormsApp1
             return base.ExecuteAfterFilter(interfaceType, implement, methodName, paras, result);
         }
 
-        public override void ExecuteExcption(Type interfaceType, object implement, string methodName, PList<Para> paras, Exception ex)
+        public override void ExecuteException(Type interfaceType, object implement, string methodName, PList<Para> paras, Exception ex)
         {
-            base.ExecuteExcption(interfaceType, implement, methodName, paras, ex);
+            base.ExecuteException(interfaceType, implement, methodName, paras, ex);
         }
     }
 }
