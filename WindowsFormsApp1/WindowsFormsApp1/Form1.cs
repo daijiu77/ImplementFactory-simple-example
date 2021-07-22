@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
             getData();
 
-            //int a1 = calculate.Sum(1, 2);
+            int a1 = calculate.Division(1, 0);
 
             //virtualMethod.say();
 
