@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
             getData();
 
             int a1 = calculate.Division(1, 0);
-
+            CalculateImpl calculateImpl = calculate.GetSourceInstance<CalculateImpl>();
             //virtualMethod.say();
 
             button1.Click += Button1_Click;
