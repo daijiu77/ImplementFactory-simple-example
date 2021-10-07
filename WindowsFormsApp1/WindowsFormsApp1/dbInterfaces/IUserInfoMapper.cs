@@ -4,7 +4,7 @@ using WindowsFormsApp1.entities;
 
 namespace WindowsFormsApp1.dbInterfaces
 {
-    public interface IUserInfoMapper
+    public interface IUserInfoMapper: IBaseDataSource<UserInfo>
     {
         [AutoSelect("select * from UserInfo order by id desc")]
         List<UserInfo> query();

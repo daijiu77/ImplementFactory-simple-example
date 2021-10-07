@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             ImplementAdapter.Register(this);
 
             //test_clone();
-
+            
             getData();
 
             int a1 = calculate.Division(1, 0);
@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void getData()
         {
+            List<EmployeeInfo> list = employeeInfo.query("", 5, 1);
             EmployeeInfo ei = employeeInfo.getEmployeeInfoByCompanyNameEn("YY");
             ei.ForeachProperty((pi, type, fn, fv) =>
             {

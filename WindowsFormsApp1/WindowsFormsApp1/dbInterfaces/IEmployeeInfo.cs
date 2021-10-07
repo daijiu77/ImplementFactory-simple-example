@@ -7,7 +7,7 @@ using WindowsFormsApp1.entities;
 
 namespace WindowsFormsApp1.dbInterfaces
 {
-    public interface IEmployeeInfo
+    public interface IEmployeeInfo: IBaseDataSource<EmployeeInfo>
     {
         /// <summary>
         /// Reset the returned result.

@@ -6,7 +6,7 @@ using WindowsFormsApp1.entities;
 
 namespace WindowsFormsApp1.dbInterfaces
 {
-    public interface IRoles
+    public interface IRoles: IBaseDataSource<Roles>
     {
         [AutoSelect("select * from Roles order by date_time desc")]
         List<Roles> query();
