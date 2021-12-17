@@ -18,6 +18,14 @@ namespace WindowsFormsApp1.dbInterfaces
             new string[] { "WindowsFormsApp1", "EmployeeInfoResult", "Reset" })] // new string[] { Namespace, ClassName, MethodName }
         EmployeeInfo getEmployeeInfoByCompanyNameEn(string ComNameEn);
 
+        /// <summary>
+        /// Dynamically generate “where” conditional expressions based on object properties.
+        /// </summary>
+        /// <param name="employeeInfo"></param>
+        /// <returns></returns>
+        [AutoSelect("select * from EmployeeInfo where {employeeInfo}")]
+        List<EmployeeInfo> query(EmployeeInfo employeeInfo);
+
         [AutoSelect("select a.* from EmployeeInfo a, WorkInfo b where a.id=b.EmployeeInfoID and b.CompanyNameEn=@ComNameEn",
             new string[] { "WindowsFormsApp1", "EmployeeInfoResult", "Reset1" })] // new string[] { Namespace, ClassName, MethodName }
         string getEmployeeInfoByCompanyNameEn1(string ComNameEn);

@@ -105,6 +105,10 @@ namespace WindowsFormsApp1
                 textBox1.Text += fn + ": " + fv.ToString() + "\r\n";
             });
 
+            EmployeeInfo employeeInfo1 = new EmployeeInfo();
+            employeeInfo1.name = "Z"; //根据对象属性动态生成 where 条件
+            List<EmployeeInfo> lst = employeeInfo.query(employeeInfo1);
+
             string s1 = employeeInfo.getEmployeeInfoByCompanyNameEn1("YY");
 
             textBox1.Text += s1 + "\r\n";
