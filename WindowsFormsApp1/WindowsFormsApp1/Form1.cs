@@ -106,7 +106,11 @@ namespace WindowsFormsApp1
             });
 
             EmployeeInfo employeeInfo1 = new EmployeeInfo();
-            employeeInfo1.name = "Z"; //根据对象属性动态生成 where 条件
+            employeeInfo1.name = "Z";
+            /**
+             * 根据对象属性动态生成 where 条件
+             * where name like '%Z%'
+             * **/
             List<EmployeeInfo> lst = employeeInfo.query(employeeInfo1);
 
             string s1 = employeeInfo.getEmployeeInfoByCompanyNameEn1("YY");
