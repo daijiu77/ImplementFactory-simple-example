@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         public string Reset1(DataEntity<DataElement> result)
         {
             if (null == result) return "";
+            if (0 == result.Count) return "";
             return result["name"].ToString();
         }
 
