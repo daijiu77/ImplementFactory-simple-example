@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         List<SendEquipInfoToAPI> elists = new List<SendEquipInfoToAPI>();
 
         [MyAutoCall]
-        IEmployeeInfo employeeInfo;
+        IEmployeeInfo employeeInfo;// = new dynamicImpl_20220314220332_33();
 
         [MyAutoCall]
         ICalculate calculate;
