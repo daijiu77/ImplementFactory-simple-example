@@ -5,13 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ImplementFactory.NetCore" Version="1.1.10.87" />
+    <PackageReference Include="ImplementFactory.NetCore" Version="1.1.10.88" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.DJ.DJson">
       <HintPath>libs\System.DJ.DJson.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ImplementFactory.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 
