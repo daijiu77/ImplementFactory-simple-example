@@ -30,7 +30,11 @@ namespace WindowsFormsApp1
             ImplementAdapter.Register(this);
 
             //test_clone();
-            
+
+            //实现ORM
+            TestORM orm = new TestORM();
+            orm.Query();
+
             getData();
 
             int a1 = calculate.Division(1, 0);

@@ -1,23 +1,27 @@
-﻿using System.DJ.ImplementFactory.Commons.Attrs;
+﻿using System.Collections.Generic;
+using System.DJ.ImplementFactory.Commons.Attrs;
+using System.DJ.ImplementFactory.DataAccess;
 using System.DJ.ImplementFactory.NetCore.Commons.Attrs;
 
 namespace WindowsFormsApp1.entities
 {
-    public class EmployeeInfo
+    public class EmployeeInfo: AbsDataModel
     {
         [Condition("=", Condition.WhereIgrons.igroneZero)]
-        public int id { get; set; }
+        public virtual int id { get; set; }
         
         [Condition("like", Condition.WhereIgrons.igroneEmptyNull)]
-        public string name { get; set; }
+        public virtual string name { get; set; }
 
         [Condition("like", Condition.WhereIgrons.igroneEmptyNull)]
-        public string address { get; set; }
+        public virtual string address { get; set; }
 
         [Condition("like", Condition.WhereIgrons.igroneEmptyNull)]
         [FieldMapping("telphone")]
-        public string telphoneNumber { get; set; }
+        public virtual string telphoneNumber { get; set; }
 
+        [Constraint(foreignKey: "id", refrenceKey: "EmployeeInfoId")]
+        public virtual List<WorkInfo> WorkInfos { get; set; }
     }
 
 }
